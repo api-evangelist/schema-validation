@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "validation": "https://json-schema.org/vocab/validation#",
+    "openapi": "https://spec.openapis.org/oas/v3.1/vocab#",
+
+    "SchemaValidator": "validation:SchemaValidator",
+    "ValidationRule": "validation:ValidationRule",
+    "ValidationResult": "validation:ValidationResult",
+    "ValidationError": "validation:ValidationError",
+    "JSONSchema": "validation:JSONSchema",
+    "OpenAPISpec": "openapi:OpenAPIDocument",
+    "SchemaValidationConfig": "validation:SchemaValidationConfig",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "version": "schema:version",
+    "codeRepository": "schema:codeRepository",
+    "documentation": "schema:documentation",
+    "license": "schema:license",
+    "programmingLanguage": "schema:programmingLanguage",
+    "softwareVersion": "schema:softwareVersion",
+
+    "validates": {
+      "@id": "validation:validates",
+      "@type": "@id"
+    },
+    "validationDraft": "validation:jsonSchemaDraft",
+    "severity": "validation:severity",
+    "given": "validation:jsonPath",
+    "ruleName": "validation:ruleName",
+    "errorMessage": "validation:errorMessage",
+    "isValid": "validation:isValid",
+
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "SoftwareLibrary": "schema:SoftwareApplication",
+    "APIReference": "schema:APIReference"
+  },
+  "@graph": [
+    {
+      "@id": "https://ajv.js.org/",
+      "@type": ["SoftwareApplication", "SchemaValidator"],
+      "name": "AJV JSON Schema Validator",
+      "description": "The fastest JSON Schema validator for JavaScript, supporting all major JSON Schema drafts.",
+      "url": "https://ajv.js.org/",
+      "codeRepository": "https://github.com/ajv-validator/ajv",
+      "programmingLanguage": "JavaScript"
+    },
+    {
+      "@id": "https://json-schema.hyperjump.io/",
+      "@type": ["SoftwareApplication", "SchemaValidator"],
+      "name": "Hyperjump JSON Schema",
+      "description": "Standards-compliant JSON Schema validation and bundling library supporting all drafts and OpenAPI vocabularies.",
+      "url": "https://json-schema.hyperjump.io/",
+      "codeRepository": "https://github.com/hyperjump-io/json-schema",
+      "programmingLanguage": "JavaScript"
+    },
+    {
+      "@id": "https://stoplight.io/open-source/spectral",
+      "@type": ["SoftwareApplication", "SchemaValidator"],
+      "name": "Spectral",
+      "description": "Open-source JSON/YAML linter and schema validator providing customizable rulesets for API governance.",
+      "url": "https://stoplight.io/open-source/spectral",
+      "codeRepository": "https://github.com/stoplightio/spectral",
+      "programmingLanguage": "JavaScript"
+    }
+  ]
+}

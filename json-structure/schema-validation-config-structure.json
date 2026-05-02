@@ -1,0 +1,62 @@
+{
+  "title": "Schema Validation Configuration Structure",
+  "description": "Document structure for configuring schema validation pipelines and tooling.",
+  "type": "object",
+  "structure": {
+    "validator": "Validator engine: ajv | hyperjump | spectral | openapi-schema-validator | blaze",
+    "schema": "Path or URL to JSON Schema / OpenAPI / AsyncAPI spec",
+    "schemaType": "json-schema | openapi | asyncapi | graphql",
+    "draft": "JSON Schema draft version: draft-04 | draft-07 | 2019-09 | 2020-12",
+    "strictMode": "Boolean: reject unknown keywords",
+    "coerceTypes": "Boolean: auto-coerce data types",
+    "allErrors": "Boolean: collect all errors vs first error",
+    "output": {
+      "format": "json | text | junit | sarif",
+      "verbosity": "error | warn | info | debug"
+    },
+    "rules": [
+      {
+        "name": "Rule identifier",
+        "description": "Rule description",
+        "severity": "error | warn | info | hint",
+        "given": "JSONPath targeting nodes to validate",
+        "then": {
+          "function": "Validation function name",
+          "functionOptions": "Function-specific options"
+        }
+      }
+    ]
+  },
+  "validation_contexts": {
+    "development": "IDE validation via plugins (VS Code, IntelliJ) with live feedback",
+    "cli": "Command-line validation in developer workflow with ajv-cli, spectral-cli",
+    "ci_cd": "Automated validation gates in GitHub Actions, GitLab CI pipelines",
+    "runtime": "API gateway or middleware request/response validation",
+    "contract_testing": "Property-based testing with Schemathesis"
+  },
+  "validators": {
+    "AJV": {
+      "language": "JavaScript/Node.js",
+      "strengths": "Fastest JS validator, compiles to optimized functions",
+      "drafts": ["draft-04", "draft-06", "draft-07", "2019-09", "2020-12"],
+      "npm": "ajv"
+    },
+    "Hyperjump": {
+      "language": "JavaScript/Node.js",
+      "strengths": "Standards-compliant, supports OpenAPI vocabularies",
+      "drafts": ["draft-04", "draft-06", "draft-07", "2019-09", "2020-12", "openapi-3.0", "openapi-3.1"],
+      "npm": "@hyperjump/json-schema"
+    },
+    "Spectral": {
+      "language": "JavaScript/Node.js",
+      "strengths": "Rule-based linting for OpenAPI/AsyncAPI governance",
+      "use_case": "API governance and design guidelines enforcement",
+      "npm": "@stoplight/spectral-core"
+    },
+    "Blaze": {
+      "language": "C++",
+      "strengths": "Ultra-high performance for server-side validation",
+      "drafts": ["draft-04", "draft-06", "draft-07", "2019-09", "2020-12"]
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema-validation.apievangelist.com/schema-validation-config-schema.json",
+  "title": "Schema Validation Configuration",
+  "description": "JSON Schema for configuring schema validation pipelines, including validator selection, rule configuration, and output format.",
+  "type": "object",
+  "properties": {
+    "validator": {
+      "type": "string",
+      "enum": ["ajv", "hyperjump", "spectral", "openapi-schema-validator", "blaze"],
+      "description": "The schema validator to use for validation."
+    },
+    "schema": {
+      "oneOf": [
+        { "type": "string", "format": "uri", "description": "URL to JSON Schema or OpenAPI spec file" },
+        { "type": "object", "description": "Inline JSON Schema object" }
+      ],
+      "description": "The schema to validate against."
+    },
+    "schemaType": {
+      "type": "string",
+      "enum": ["json-schema", "openapi", "asyncapi", "graphql"],
+      "description": "The type/specification of the schema being validated."
+    },
+    "draft": {
+      "type": "string",
+      "enum": ["draft-04", "draft-06", "draft-07", "2019-09", "2020-12"],
+      "description": "The JSON Schema draft version (for JSON Schema validation)."
+    },
+    "strictMode": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether to apply strict validation mode rejecting unknown keywords."
+    },
+    "coerceTypes": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether to coerce data types to match schema type constraints."
+    },
+    "allErrors": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether to collect all validation errors or stop at the first error."
+    },
+    "output": {
+      "type": "object",
+      "description": "Output format configuration.",
+      "properties": {
+        "format": {
+          "type": "string",
+          "enum": ["json", "text", "junit", "sarif"],
+          "description": "The format for validation output."
+        },
+        "verbosity": {
+          "type": "string",
+          "enum": ["error", "warn", "info", "debug"],
+          "description": "Verbosity level for validation output."
+        }
+      }
+    },
+    "rules": {
+      "type": "array",
+      "description": "Custom validation rules (Spectral-style rulesets).",
+      "items": {
+        "$ref": "#/$defs/ValidationRule"
+      }
+    }
+  },
+  "$defs": {
+    "ValidationRule": {
+      "type": "object",
+      "required": ["name", "severity", "given", "then"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Unique identifier for the rule."
+        },
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of what the rule validates."
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["error", "warn", "info", "hint"],
+          "description": "The severity level of a rule violation."
+        },
+        "given": {
+          "oneOf": [
+            { "type": "string" },
+            { "type": "array", "items": { "type": "string" } }
+          ],
+          "description": "JSONPath expression(s) identifying the target nodes in the document."
+        },
+        "then": {
+          "type": "object",
+          "description": "The function and options to apply to the target nodes.",
+          "properties": {
+            "function": {
+              "type": "string",
+              "description": "The validation function to apply."
+            },
+            "functionOptions": {
+              "type": "object",
+              "description": "Options passed to the validation function.",
+              "additionalProperties": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

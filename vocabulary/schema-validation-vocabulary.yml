@@ -1,0 +1,146 @@
+aid: schema-validation
+name: Schema Validation
+description: >-
+  Vocabulary and taxonomy for schema validation concepts, tools, patterns,
+  and best practices in API development and governance.
+version: '1.0'
+created: '2026-05-02'
+modified: '2026-05-02'
+tags:
+  - API Governance
+  - JSON Schema
+  - Schema Validation
+
+terms:
+  - term: Schema Validation
+    definition: >-
+      The process of verifying that a data structure (object, document, or API
+      payload) conforms to a defined schema or specification. Schema validation
+      enforces type constraints, required fields, format patterns, and value
+      ranges.
+    category: Core Concept
+    aliases:
+      - Schema Compliance
+      - Data Validation
+
+  - term: JSON Schema
+    definition: >-
+      A vocabulary for describing and validating JSON data structures. The IETF
+      standard defines keywords like type, properties, required, format, minimum,
+      maximum, enum, and pattern used to declare constraints on JSON data.
+    category: Specification
+    versions:
+      - Draft 4
+      - Draft 6
+      - Draft 7
+      - "2019-09"
+      - "2020-12"
+
+  - term: OpenAPI Validation
+    definition: >-
+      Validation of API request and response payloads against an OpenAPI
+      specification's schema definitions. Includes validating path parameters,
+      query parameters, request bodies, and response bodies.
+    category: Use Case
+
+  - term: Contract Testing
+    definition: >-
+      Testing that verifies an API implementation matches its declared contract
+      (OpenAPI or JSON Schema spec). Tools like Schemathesis perform automated
+      contract testing using property-based test generation.
+    category: Use Case
+
+  - term: JSON Schema Draft
+    definition: >-
+      A specific version of the JSON Schema specification. Each draft introduces
+      new keywords and refines existing behavior. Draft 2020-12 is the current
+      latest stable draft.
+    category: Specification
+    current_stable: "2020-12"
+
+  - term: AJV
+    definition: >-
+      Another JSON Validator. The fastest JSON Schema validator for JavaScript,
+      which compiles schemas to highly optimized JavaScript validation functions.
+    category: Tool
+    language: JavaScript
+    url: https://ajv.js.org/
+
+  - term: Hyperjump
+    definition: >-
+      A standards-compliant JSON Schema validation, annotation, and bundling
+      library for JavaScript supporting all drafts and OpenAPI vocabularies.
+    category: Tool
+    language: JavaScript
+    url: https://json-schema.hyperjump.io/
+
+  - term: Spectral
+    definition: >-
+      An open-source JSON/YAML linter from Stoplight providing customizable
+      rulesets for OpenAPI, AsyncAPI, and JSON Schema governance.
+    category: Tool
+    language: JavaScript
+    url: https://stoplight.io/open-source/spectral
+
+  - term: Validation Keyword
+    definition: >-
+      A JSON Schema keyword that defines a constraint on instance data.
+      Examples include type, required, properties, minLength, maxLength,
+      minimum, maximum, enum, pattern, and format.
+    category: JSON Schema Concept
+
+  - term: Validation Error
+    definition: >-
+      A structured report from a schema validator identifying the instance
+      path, schema path, keyword, and message of a constraint violation.
+    category: Output Format
+
+  - term: Format Validation
+    definition: >-
+      Validation of string values against named formats like email, uri,
+      date-time, ipv4, and uuid. Format validation may be assertion-based
+      (strict) or annotation-based (informational).
+    category: JSON Schema Concept
+
+  - term: Schema Linting
+    definition: >-
+      Static analysis of schemas and API specifications for style, consistency,
+      naming conventions, and governance policy compliance. Distinct from
+      data validation (checking values against schemas).
+    category: Use Case
+
+  - term: JSON Path
+    definition: >-
+      A query language for selecting nodes within a JSON document, used in
+      Spectral rules to target specific schema elements for validation.
+    category: Tool Concept
+
+  - term: Strict Mode
+    definition: >-
+      A validator configuration that causes additional or unknown schema
+      keywords to be treated as errors rather than being silently ignored.
+    category: Configuration
+
+  - term: Schema Bundle
+    definition: >-
+      A JSON Schema document that combines multiple schemas (resolving $ref
+      references) into a single self-contained file for portability and
+      tooling compatibility.
+    category: JSON Schema Concept
+
+  - term: Ruleset
+    definition: >-
+      A configuration file (YAML or JSON) defining a collection of
+      Spectral validation rules, each with a severity, target path,
+      and validation function.
+    category: Tool Concept
+
+categories:
+  - Core Concept
+  - Specification
+  - Use Case
+  - Tool
+  - JSON Schema Concept
+  - Output Format
+  - Configuration
+  - Tool Concept
