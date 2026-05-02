@@ -20,7 +20,7 @@ Key tools include AJV, Hyperjump JSON Schema, Spectral, and Schemathesis, each a
 - [JSON Schema Organization](https://json-schema.org/)
 - [JSON Schema Learn](https://json-schema.org/learn)
 - [JSON Schema GitHub](https://github.com/json-schema-org)
-- [API Evangelist: Schema Tools](https://apievangelist.com/2026/01/12/exploring-what-schema-tools-are-available/)
+- [API Evangelist Archive](https://apievangelist.com/archive/)
 
 ## Artifacts
 

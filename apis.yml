@@ -139,6 +139,21 @@ common:
     url: https://apievangelist.com/archive/
   - type: GitHub Organization
     url: https://github.com/json-schema-org
+  - type: JSONSchema
+    url: >-
+      https://raw.githubusercontent.com/api-evangelist/schema-validation/refs/heads/main/json-schema/schema-validation-config-schema.json
+  - type: JSONStructure
+    url: >-
+      https://raw.githubusercontent.com/api-evangelist/schema-validation/refs/heads/main/json-structure/schema-validation-config-structure.json
+  - type: JSONLd
+    url: >-
+      https://raw.githubusercontent.com/api-evangelist/schema-validation/refs/heads/main/json-ld/schema-validation-context.jsonld
+  - type: Vocabulary
+    url: >-
+      https://raw.githubusercontent.com/api-evangelist/schema-validation/refs/heads/main/vocabulary/schema-validation-vocabulary.yml
+  - type: Examples
+    url: >-
+      https://raw.githubusercontent.com/api-evangelist/schema-validation/refs/heads/main/examples/schema-validation-ajv-example.json
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
