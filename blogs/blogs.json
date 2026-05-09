@@ -3,11 +3,11 @@
   "feeds": [
     {
       "source": "https://apievangelist.com/archive/",
-      "feed_url": "https://apievangelist.com/atom.xml",
-      "saved": 10,
-      "title": "API Evangelist"
+      "feed_url": "https://apievangelist.com/feed",
+      "title": "API Evangelist",
+      "saved": 6
     }
   ],
-  "post_count": 10,
-  "fetched": "2026-05-03T23:35:40Z"
+  "post_count": 16,
+  "fetched": "2026-05-09T20:17:51Z"
 }
