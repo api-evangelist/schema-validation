@@ -38,11 +38,11 @@ apis:
     properties:
       - type: Documentation
         url: https://ajv.js.org/
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/ajv-validator/ajv
       - type: npm Package
         url: https://www.npmjs.com/package/ajv
-      - type: API Reference
+      - type: APIReference
         url: https://ajv.js.org/api.html
   - aid: schema-validation:hyperjump-json-schema
     name: Hyperjump JSON Schema
@@ -60,7 +60,7 @@ apis:
     properties:
       - type: Documentation
         url: https://json-schema.hyperjump.io/
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/hyperjump-io/json-schema
       - type: npm Package
         url: https://www.npmjs.com/package/@hyperjump/json-schema
@@ -81,7 +81,7 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.stoplight.io/docs/spectral/
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/stoplightio/spectral
       - type: npm Package
         url: https://www.npmjs.com/package/@stoplight/spectral-core
@@ -97,7 +97,7 @@ apis:
       - Schema Validation
       - Node.js
     properties:
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/seriousme/openapi-schema-validator
       - type: npm Package
         url: https://www.npmjs.com/package/@seriousme/openapi-schema-validator
@@ -114,7 +114,7 @@ apis:
       - Performance
       - Schema Validation
     properties:
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/sourcemeta/blaze
   - aid: schema-validation:alterschema
     name: AlterSchema
@@ -128,7 +128,7 @@ apis:
       - Schema Migration
       - Schema Validation
     properties:
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/sourcemeta/alterschema
 common:
   - type: Website
@@ -137,7 +137,7 @@ common:
     url: https://json-schema.org/learn
   - type: Blog
     url: https://apievangelist.com/archive/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/json-schema-org
   - type: JSONSchema
     url: >-
@@ -145,7 +145,7 @@ common:
   - type: JSONStructure
     url: >-
       https://raw.githubusercontent.com/api-evangelist/schema-validation/refs/heads/main/json-structure/schema-validation-config-structure.json
-  - type: JSONLd
+  - type: JSONLD
     url: >-
       https://raw.githubusercontent.com/api-evangelist/schema-validation/refs/heads/main/json-ld/schema-validation-context.jsonld
   - type: Vocabulary
