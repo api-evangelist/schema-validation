@@ -133,6 +133,8 @@ apis:
   - type: GitHubRepository
     url: https://github.com/sourcemeta/alterschema
 common:
+- type: DomainSecurity
+  url: security/schema-validation-domain-security.yml
 - type: Website
   url: https://json-schema.org/
 - type: Documentation
