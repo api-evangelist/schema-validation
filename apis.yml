@@ -1,5 +1,6 @@
 aid: schema-validation
 name: Schema Validation
+kind: topic
 description: >-
   Schema validation is the practice of verifying that data structures conform
   to a defined schema, contract, or specification. In API development, schema
