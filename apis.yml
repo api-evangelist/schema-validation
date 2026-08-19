@@ -33,7 +33,7 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/schema-validation/refs/heads/main/apis.yml
 created: '2025'
 modified: '2026-05-02'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: schema-validation:ajv
   name: AJV JSON Schema Validator
