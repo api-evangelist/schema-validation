@@ -26,6 +26,12 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/schema-val
 tags:
 - API Governance
 - Contract Testing
+- JSON-Schema
+- OpenAPI
+- Schema Validation
+tags_raw:
+- API Governance
+- Contract Testing
 - JSON Schema
 - OpenAPI
 - Schema Validation
@@ -44,6 +50,11 @@ apis:
     highly optimized JavaScript functions for maximum runtime performance.
   humanURL: https://ajv.js.org/
   tags:
+  - JSON-Schema
+  - JavaScript
+  - Schema Validation
+  - Node.js
+  tags_raw:
   - JSON Schema
   - JavaScript
   - Schema Validation
@@ -68,6 +79,11 @@ apis:
     an OAS Schema Validator for OpenAPI-specific validation.
   humanURL: https://json-schema.hyperjump.io/
   tags:
+  - JSON-Schema
+  - JavaScript
+  - OpenAPI
+  - Schema Validation
+  tags_raw:
   - JSON Schema
   - JavaScript
   - OpenAPI
@@ -88,6 +104,12 @@ apis:
     governance at the CLI, IDE, and CI/CD pipeline level.
   humanURL: https://stoplight.io/open-source/spectral
   tags:
+  - API Governance
+  - API Linting
+  - JSON-Schema
+  - OpenAPI
+  - Schema Validation
+  tags_raw:
   - API Governance
   - API Linting
   - JSON Schema
@@ -125,6 +147,11 @@ apis:
   humanURL: https://github.com/sourcemeta/blaze
   tags:
   - C++
+  - JSON-Schema
+  - Performance
+  - Schema Validation
+  tags_raw:
+  - C++
   - JSON Schema
   - Performance
   - Schema Validation
@@ -139,6 +166,10 @@ apis:
     enabling schema modernization pipelines.
   humanURL: https://github.com/sourcemeta/alterschema
   tags:
+  - JSON-Schema
+  - Schema Migration
+  - Schema Validation
+  tags_raw:
   - JSON Schema
   - Schema Migration
   - Schema Validation
