@@ -207,7 +207,7 @@ common:
 - type: Documentation
   url: https://json-schema.org/learn
 - type: Blog
-  url: https://apievangelist.com/archive/
+  url: https://json-schema.org/blog
 - type: GitHubOrganization
   url: https://github.com/json-schema-org
 - type: JSONSchema
