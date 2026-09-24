@@ -38,7 +38,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/schema-val
 tags:
 - API Governance
 - Contract Testing
-- JSON-Schema
+- JSON Schema
 - OpenAPI
 - Schema Validation
 tags_raw:
@@ -47,6 +47,7 @@ tags_raw:
 - JSON Schema
 - OpenAPI
 - Schema Validation
+- JSON-Schema
 url: >-
   https://raw.githubusercontent.com/api-evangelist/schema-validation/refs/heads/main/apis.yml
 created: '2025'
@@ -62,7 +63,7 @@ apis:
     highly optimized JavaScript functions for maximum runtime performance.
   humanURL: https://ajv.js.org/
   tags:
-  - JSON-Schema
+  - JSON Schema
   - JavaScript
   - Schema Validation
   - Node.js
@@ -71,6 +72,7 @@ apis:
   - JavaScript
   - Schema Validation
   - Node.js
+  - JSON-Schema
   properties:
   - type: Documentation
     url: https://ajv.js.org/
@@ -80,8 +82,6 @@ apis:
     url: https://www.npmjs.com/package/ajv
   - type: APIReference
     url: https://ajv.js.org/api.html
-  - url: graphql/schema-validation-graphql.md
-    type: GraphQL
 - aid: schema-validation:hyperjump-json-schema
   name: Hyperjump JSON Schema
   description: >-
@@ -91,7 +91,7 @@ apis:
     an OAS Schema Validator for OpenAPI-specific validation.
   humanURL: https://json-schema.hyperjump.io/
   tags:
-  - JSON-Schema
+  - JSON Schema
   - JavaScript
   - OpenAPI
   - Schema Validation
@@ -100,6 +100,7 @@ apis:
   - JavaScript
   - OpenAPI
   - Schema Validation
+  - JSON-Schema
   properties:
   - type: Documentation
     url: https://json-schema.hyperjump.io/
@@ -118,7 +119,7 @@ apis:
   tags:
   - API Governance
   - API Linting
-  - JSON-Schema
+  - JSON Schema
   - OpenAPI
   - Schema Validation
   tags_raw:
@@ -127,6 +128,7 @@ apis:
   - JSON Schema
   - OpenAPI
   - Schema Validation
+  - JSON-Schema
   properties:
   - type: Documentation
     url: https://docs.stoplight.io/docs/spectral/
@@ -159,7 +161,7 @@ apis:
   humanURL: https://github.com/sourcemeta/blaze
   tags:
   - C++
-  - JSON-Schema
+  - JSON Schema
   - Performance
   - Schema Validation
   tags_raw:
@@ -167,6 +169,7 @@ apis:
   - JSON Schema
   - Performance
   - Schema Validation
+  - JSON-Schema
   properties:
   - type: GitHubRepository
     url: https://github.com/sourcemeta/blaze
@@ -178,13 +181,14 @@ apis:
     enabling schema modernization pipelines.
   humanURL: https://github.com/sourcemeta/alterschema
   tags:
-  - JSON-Schema
+  - JSON Schema
   - Schema Migration
   - Schema Validation
   tags_raw:
   - JSON Schema
   - Schema Migration
   - Schema Validation
+  - JSON-Schema
   properties:
   - type: GitHubRepository
     url: https://github.com/sourcemeta/alterschema
